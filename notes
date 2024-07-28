@@ -1,0 +1,14 @@
+sh .venv/bin/activate
+python -m flask run
+python -m flask run --host=0.0.0.0
+gunicorn -w 4 'app:app' --bind=0.0.0.0
+http://192.168.0.170:8000/
+http://192.168.0.170:8000/pinyin/日本
+
+sudo ufw enable
+sudo ufw allow proto tcp from 192.168.0.159 to any port 5000
+sudo ufw deny 5000
+
+sudo ufw disable
+sudo ufw status
+sudo ufw status verbose
