@@ -5,6 +5,30 @@ gunicorn -w 4 'app:app' --bind=0.0.0.0
 http://192.168.0.170:8000/
 http://192.168.0.170:8000/pinyin/日本
 
+Python: Select Interpreter
+python -m flask run
+
+Python: Create Environment
+venv
+
+python3 -m venv .venv
+
+Terminal: Create New Terminal
+python -m pip install flask
+
+ VS Code activates the environment automatically when you use Terminal: Create New Terminal
+
+ .venv\Scripts\Activate.ps1
+ source .venv/Scripts/activate
+
+ gcm python
+
+ python -m flask run
+
+ deactivate
+
+https://www.geeksforgeeks.org/how-to-integrate-git-bash-with-visual-studio-code/
+
 sudo ufw enable
 sudo ufw allow proto tcp from 192.168.0.159 to any port 5000
 sudo ufw deny 5000

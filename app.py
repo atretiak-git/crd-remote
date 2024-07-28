@@ -15,6 +15,7 @@ import pinyin_jyutping_sentence
 app = Flask(__name__)
 CORS(app, origins=[
                    "http://127.0.0.1:80",
+                   "http://127.0.0.1:5500",
                    "http://192.168.0.170:80", # ativ
                    "http://127.0.0.1:5500",
                    "http://192.168.0.170:5500", # ativ
